@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shariq Jabbar Chohan - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #f2f2f2;
+      scroll-behavior: smooth;
+    }
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #0f0f0f;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #222;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #3a82f7;
+    }
+    header {
+      padding: 120px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 { font-size: 48px; font-weight: 700; }
+    h2 { font-size: 32px; text-align: center; margin-top: 50px; }
+    p { font-size: 18px; max-width: 800px; margin: auto; }
+    .section { padding: 60px 20px; }
+
+    /* PROJECT CARDS */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-top: 30px; }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid #222;
+      transition: 0.4s;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    .card:hover { transform: scale(1.03); border-color: #3a82f7; }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    /* BUTTON */
+    .contact-btn, .cv-btn {
+      padding: 12px 28px;
+      display: inline-block;
+      background: #3a82f7;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .cv-btn:hover, .contact-btn:hover { background: #1f64d4; }
+
+    footer { text-align: center; padding: 40px 20px; background: #111; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div><strong>Shariq Jabbar Chohan</strong></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home">
+    <h1>Shariq Jabbar Chohan</h1>
+    <p>Data Analyst • Power BI Specialist • SQL Developer</p>
+    <a href="CV.docx" class="cv-btn" download>Download CV</a>
+  </header>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <h2>Experience</h2>
+    <p><strong>Amazon Virtual Assistant — Hyper Future (Aug 2023 – Feb 2024)</strong><br>
+       Managed operations, product analytics, inventory insights, and reporting.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <img src="project 3.png" />
+        <h3>Electronics Sales Dashboard</h3>
+        <p>Power BI dashboard with 500K+ rows, KPIs, and DAX measures.</p>
+      </div>
+
+      <div class="card">
+        <img src="Project 2.png" />
+        <h3>HR Attrition Analytics</h3>
+        <p>1M+ dataset with attrition segmentation, heatmaps & modeling.</p>
+      </div>
+
+      <div class="card">
+        <img src="Project 1.png" />
+        <h3>Superstore BI Dashboard</h3>
+        <p>Sales, profit and regional analytics dashboard with DAX.</p>
+      </div>
+
+      <div class="card">
+        <img src="My Saloon App.png" />
+        <h3>My Saloon App</h3>
+        <p>Full-stack application built with PHP, SQL and JavaScript.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <p>SQL • Power BI • DAX • Excel • JavaScript • React • Data Modeling • Power Query • ETL • Dashboards</p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Science (BSCS)</strong><br>FUUAST Islamabad (2019–2023)</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:shariqchohan38@gmail.com">shariqchohan38@gmail.com</a></p>
+    <p>Phone: 0333-6438524</p>
+  </section>
+
+  <footer>© 2025 Shariq Jabbar Chohan — Portfolio Website</footer>
+</body>
+</html>
